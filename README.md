@@ -1,6 +1,7 @@
-# DIPLOMATURA UNIVERSITARIA EN COMPETENCIAS TÉCNICAS 2026
-## UNIVERSIDAD DE CÓRDOBA (ARGENTINA)
-### ACTIVIDADES PRÁCTICAS
+## **Diplomatura Universitaria**  
+## **en Competencias Técnicas (DUCT) 2026**
+### Universidad de Córdoba (Argentina)
+### **ACTIVIDADES PRÁCTICAS**
 
 
 #### Módulos I y II: Inteligencia Artificial Generativa
