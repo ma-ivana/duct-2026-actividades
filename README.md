@@ -12,3 +12,4 @@
 
 #### Módulo IV: Python
  - Analizador de frecuencias: [código e informe](modulo_IV/clase2/actividad_obligatoria/README.md)
+ - Analizador gráfico de frecuencias: [código e informe](modulo_IV/clase3/actividad_obligatoria/README.md)
