@@ -25,20 +25,16 @@ def analizar_y_graficar(ruta, top_n=10):
     
     top10 = sorted(frecuencias.items(), key=lambda x: x[1], reverse=True)[:top_n]
 
-
-    # TODO: a partir de "top10" (una lista de tuplas palabra-frecuencia),
-    # crea dos listas separadas usando comprension de listas:
-    # "palabras" con solo las palabras, y "valores" con solo las frecuencias
-    
+   
     palabras = [p[0] for p in top10]
     valores = [p[1] for p in top10]
 
     plt.figure(figsize=(10, 6))
-    #plt.barh(palabras[::-1], valores[::-1], color="steelblue")
     bars = plt.barh(palabras[::-1], valores[::-1], color="lightseagreen")
     plt.bar_label(bars, padding=3)
     plt.title(f"Top {top_n} palabras más frecuentes")
     plt.xlabel("Frecuencia")
+    plt.ylabel("Palabras")
     plt.tight_layout()
     plt.savefig("grafico_frecuencias.png", dpi=150, bbox_inches="tight")
     plt.show()
