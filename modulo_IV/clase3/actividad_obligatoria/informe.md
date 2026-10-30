@@ -12,6 +12,6 @@ El tercer valor indica el paso, en este caso 1, y el signo menos indica que se d
 ---
 
 *¿Por qué usar plt.barh() (barras horizontales) en vez de plt.bar() (barras verticales) para este caso?*  
-Porque hay más de 5 categorías, que es lo recomendado para el gráfico de barras vertical. Además, el Eje X en esta caso contiene los valores de frecuencia, que ocupan pocos caracteres. En cambio, las palabras mencionadas en el Eje Y podrían tener mucho más que tres caracteres. Por eso, es preferible mostrarlas en el Eje Y más que en el X, para que las etiquetas se lean correctamente.
+Porque hay más de 5 categorías, que es lo recomendado para el gráfico de barras verticales. Además, el Eje X en esta caso contiene los valores de frecuencia, que ocupan pocos caracteres. En cambio, las palabras mencionadas en el Eje Y podrían tener mucho más que tres caracteres. Por eso, es preferible mostrarlas en el Eje Y más que en el X, para que las etiquetas se lean correctamente.
 
 ---
