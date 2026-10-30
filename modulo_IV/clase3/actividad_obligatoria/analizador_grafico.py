@@ -34,16 +34,17 @@ def analizar_y_graficar(ruta, top_n=10):
     valores = [p[1] for p in top10]
 
     plt.figure(figsize=(10, 6))
-    plt.barh(palabras[::-1], valores[::-1], color="steelblue")
-    plt.title(f"Top {top_n} palabras mas frecuentes")
+    #plt.barh(palabras[::-1], valores[::-1], color="steelblue")
+    bars = plt.barh(palabras[::-1], valores[::-1], color="lightseagreen")
+    plt.bar_label(bars, padding=3)
+    plt.title(f"Top {top_n} palabras más frecuentes")
     plt.xlabel("Frecuencia")
     plt.tight_layout()
     plt.savefig("grafico_frecuencias.png", dpi=150, bbox_inches="tight")
     plt.show()
 
 def main():
-    #analizar_y_graficar("texto.txt")
-    analizar_y_graficar("biblioteca_de_babel.txt")
+    analizar_y_graficar(ruta)
     
 if __name__ == "__main__":
     main()
