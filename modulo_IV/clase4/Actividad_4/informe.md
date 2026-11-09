@@ -33,7 +33,7 @@ por
 ```python
 palabras = re.findall(r"\b\w+\b", texto.lower())
 ```
-Primero importé `re` arriba de todo para poder usar expresiones regulares. Con `re.findall(r"\b\w+\b")` puedo encontrar todas las palabras enteras (\b marca los límites de inicio/final de cada palabra, incluidos números y guiones bajos).
+Primero importé `re` arriba de todo para poder usar expresiones regulares. Con `re.findall(r"\b\w+\b")` puedo encontrar todas las palabras enteras (\b marca los límites de inicio/final de cada palabra), ya que busca todos los caracteres de palabras, incluidos números y guiones bajos.
 
 Con esa línea modificada en el archivo [analizador.py](analizador.py), el resultado de la cuarta prueba en [test_analizador.py](test_analizador.py) da **PASSED**.
 
