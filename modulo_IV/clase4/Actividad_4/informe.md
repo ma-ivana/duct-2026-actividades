@@ -35,18 +35,19 @@ palabras = re.findall(r"\b\w+\b", texto.lower())
 ```
 Primero importé `re` arriba de todo para poder usar expresiones regulares. Con `re.findall(r"\b\w+\b")` puedo encontrar todas las palabras enteras (\b marca los límites de inicio/final de cada palabra), ya que busca todos los caracteres de palabras, incluidos números y guiones bajos.
 
-Con esa línea modificada en el archivo [analizador.py](analizador.py), el resultado de la cuarta prueba en [test_analizador.py](test_analizador.py) da **PASSED**.
+Con esa línea modificada en el archivo [analizador.py](analizador.py), el resultado de la cuarta prueba en [test_analizador.py](test_analizador.py) da **PASSED**. 
 
 No hace falta seguir usando `.split()` porque la línea con la expresión regular ya extrae cada palabra por separado, solo que sin puntuación ni espacios de más. `.split()` solo separa las palabras en los espacios en blanco, pero conserva los signos especiales que estén pegados a esas palabras.
+
 ---
 
 **NOTA:**  
     A modo de prueba, creé otro archivo, llamado [analizador_con_texto.py](analizador_con_texto.py) para probar esta versión de la función `contar_frecuencias` con el mismo texto trabajado en las clases anteriores: [La Biblioteca de Babel](texto.txt).
-    Por ejemplo, la palabra "zaguán" aparece en el texto en tres oportunidades: dos en las que está la palabra sola, con un espacio simple antes y otro después (zaguán) y una tercera en la que aparece con una coma (zaguán,). La función `contar_frecuencias` encuentra correctamente las tres instancias de la palabra "zaguán", sin tener en cuenta la coma.
-    En el caso de la palabra "uno", el texto tiene diferentes versiones de esta palabra: 
-    uno 3
-    Uno 1
-    Uno, 1
-    Uno: 1
-    ¡uno 1
+    Por ejemplo, la palabra "zaguán" aparece en el texto en tres oportunidades: dos en las que está la palabra sola, con un espacio simple antes y otro después (zaguán) y una tercera en la que aparece con una coma (zaguán,). La función `contar_frecuencias` encuentra correctamente las tres instancias de la palabra "zaguán", sin tener en cuenta la coma.  
+    En el caso de la palabra "uno", el texto tiene diferentes versiones de esta palabra:  
+        - uno 3  
+        - Uno 1  
+        - Uno, 1  
+        - Uno: 1  
+        - ¡uno 1  
     La función `contar_frecuencias` encuentra correctamente las siete instancias como "uno".
