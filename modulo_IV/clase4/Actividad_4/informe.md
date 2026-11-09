@@ -10,7 +10,7 @@ La prueba falla porque no encuentra tres instancias de **sol**, sino una de **So
 *¿Por qué contar_frecuencias recibe un string directamente en vez de una ruta de archivo, como en la Clase 2? ¿Qué ventaja tiene eso a la hora de escribir pruebas?*  
 
 En las pruebas se suelen utilizar datos *hardcodeados*, es decir, se pasan los datos (en este caso el string) directamente a la función para que la prueba esté aislada y no dependa de la ejecución de otra parte del código. Pasarle los datos directamente hace que sea también más legible y predecible.
-Es una práctica estándar en el caso de estas pruebas. Para probar varios casos de forma automatizada con `pytest`se podría usar la parametrización, que permite ejecutar una misma función de prueba con diferentes conjuntos de datos de entrada y resultados esperados.
+Es una práctica estándar en el caso de estas pruebas. Para probar varios casos de forma automatizada con `pytest` se podría usar la parametrización, que permite ejecutar una misma función de prueba con diferentes conjuntos de datos de entrada y resultados esperados.
 
 ---
 
