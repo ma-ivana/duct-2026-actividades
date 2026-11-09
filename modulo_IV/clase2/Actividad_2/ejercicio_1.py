@@ -1,4 +1,4 @@
-ruta = "biblioteca_de_babel.txt"
+ruta = "texto.txt"
 
 def contar_frecuencias(ruta):
     """

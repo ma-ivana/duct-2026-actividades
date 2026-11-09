@@ -1,6 +1,6 @@
-import matplotlib.pyplot as plt
+ruta = "texto.txt"
 
-ruta = "biblioteca_de_babel.txt"
+import matplotlib.pyplot as plt
 
 def analizar_y_graficar(ruta, top_n=10):
     """

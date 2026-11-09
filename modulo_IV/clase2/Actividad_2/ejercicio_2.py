@@ -1,5 +1,5 @@
 import string
-ruta = "biblioteca_de_babel.txt"
+ruta = "texto.txt"
 
 STOP_WORDS = {
     "el", "la", "los", "las", "de", "del", "y", "a", "en", "un", "una",
@@ -33,16 +33,13 @@ def main():
     frecuencias_todas = {}
     for token in tokens:
         frecuencias_todas[token] = frecuencias_todas.get(token, 0) + 1
-        # TODO: completar la linea que agrega "token" al diccionario
-        # "frecuencias_todas", sumando 1 cada vez que se repite ____________________________________
-
+        
     # Secuencia B: frecuencias sin palabras vacias (stopwords)
     frecuencias_sin_stopwords = {}
     for token in tokens:
         if token not in STOP_WORDS:
             frecuencias_sin_stopwords[token] = frecuencias_sin_stopwords.get(token, 0) + 1
-            # TODO: completar la linea que agrega "token" al diccionario
-            # "frecuencias_sin_stopwords", sumando 1 cada vez que se repite ____________________________________
+            
 
     print("=== Secuencia A: todas las palabras ===")
     top_a = sorted(frecuencias_todas.items(), key=lambda x: x[1], reverse=True)[:10]
