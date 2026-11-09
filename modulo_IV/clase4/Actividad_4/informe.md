@@ -37,7 +37,7 @@ Primero importé `re` arriba de todo para poder usar expresiones regulares. Con 
 
 Con esa línea modificada en el archivo [analizador.py](analizador.py), el resultado de la cuarta prueba en [test_analizador.py](test_analizador.py) da **PASSED**. 
 
-No hace falta seguir usando `.split()` porque la línea con la expresión regular ya extrae cada palabra por separado, solo que sin puntuación ni espacios de más. `.split()` solo separa las palabras en los espacios en blanco, pero conserva los signos especiales que estén pegados a esas palabras.
+No hace falta seguir usando `.split()` porque la línea con la expresión regular ya extrae cada palabra por separado, pero lo hace sin puntuación ni espacios de más. `.split()` solo separa las palabras en los espacios en blanco, pero conserva los signos especiales que estén pegados a esas palabras.
 
 ---
 
