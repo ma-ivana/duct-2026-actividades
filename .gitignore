@@ -1,3 +1,5 @@
 .venv/
 grafico_frecuencias_pruebas.png
 analizador_pruebas.py
+__pycache__/
+.pytest_cache/
