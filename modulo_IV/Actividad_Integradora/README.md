@@ -17,4 +17,4 @@ En este archivo, también agregué `nltk` para filtrar las palabras vacías y ge
 - Ejecutar `pip install -r requirements.txt`  
 - Ejecutar [**analizador.py**](src/analizador.py) para obtener el [**gráfico de palabras más frecuentes (sin palabras vacías)**](output/grafico_frecuencias_sin_palabras_vacias.png).
 - Ejecutar [**analizador_con_palabras_vacias.py**](src/analizador_con_palabras_vacias.py) para obtener el [**gráfico de palabras más frecuentes (con palabras vacías)**](output/grafico_frecuencias_con_palabras_vacias.png).
-- Para ejecutar las pruebas, abrir el archivo [**test_analizador.py**](tests/test_analizador.py) y ejecutar el siguiente comando en la consola: `python -m pytest -v`. Los cinco tests deberían dar $\color{green}{\text{**PASSED**}}$ como resultado.
+- Para ejecutar las pruebas, abrir el archivo [**test_analizador.py**](tests/test_analizador.py) y ejecutar el siguiente comando en la consola: `python -m pytest -v`. Los cinco tests deberían dar **PASSED** como resultado.
