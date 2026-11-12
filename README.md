@@ -14,3 +14,4 @@
  - Analizador de frecuencias: [código e informe](modulo_IV/clase2/Actividad_2/README.md)
  - Analizador gráfico de frecuencias: [código e informe](modulo_IV/clase3/Actividad_3/README.md)
  - Pruebas con Pytest: [código e informe](modulo_IV/clase4/Actividad_4/README.md)
+ - Actividad Integradora: [README](modulo_IV/Actividad_Integradora/README.md)
