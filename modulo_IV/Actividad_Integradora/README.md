@@ -6,4 +6,4 @@ En este archivo, también agregué `nltk` para filtrar las palabras vacías y ge
 * Código de pruebas con Pytest para el analizador de frecuencias: [**test_analizador.py**](tests/test_analizador.py)
 * Datos: [**El mercado de las palabras**](data/texto_integradora.txt)
 * Salida: [**gráfico de palabras más frecuentes (sin palabras vacías)**](output/grafico_frecuencias_sin_palabras_vacias.png)
-* [requirements.txt](requirements.txt): archivo generado con el comando `python -m pip freeze > requirements.txt`
+* [**requirements.txt**](requirements.txt): archivo generado con el comando `python -m pip freeze > requirements.txt`

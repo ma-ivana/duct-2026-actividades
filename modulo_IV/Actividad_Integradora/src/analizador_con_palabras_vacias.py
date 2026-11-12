@@ -14,7 +14,7 @@ def analizar(texto):
     sin la puntuación ni espacios que pudiesen acompañarlas.
 
     Parametros:
-        ruta (str): ruta al archivo de texto a analizar
+        texto (str): ruta al archivo de texto a analizar
 
     Retorna:
         dict: diccionario con las palabras y sus frecuencias
@@ -52,7 +52,7 @@ def graficar(frecuencias, top_n=10):
     plt.figure(figsize=(10, 6))
     bars = plt.barh(palabras[::-1], valores[::-1], color="lightseagreen")
     plt.bar_label(bars, padding=3)
-    plt.title(f"Top {top_n} palabras más frecuentes")
+    plt.title(f"Top {top_n} palabras más frecuentes (incluye palabras vacías)")
     plt.xlabel("Frecuencia")
     plt.ylabel("Palabras")
     plt.tight_layout()
