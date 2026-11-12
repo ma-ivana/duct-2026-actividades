@@ -15,7 +15,9 @@ palabras_vacias = set(stopwords.words("spanish"))
 def analizar(texto):
     """
     Lee un archivo de texto y cuenta la frecuencia de cada palabra,
-    ignorando las palabras vacías.
+    ignorando las palabras vacías. La expresión regular utilizada
+    permite capturar palabras que contienen letras, números y guiones bajos,
+    sin la puntuación ni espacios que pudiesen acompañarlas.
 
     Parametros:
         ruta (str): ruta al archivo de texto a analizar
