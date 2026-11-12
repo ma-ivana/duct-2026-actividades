@@ -32,15 +32,15 @@ def analizar(texto):
 def graficar(frecuencias, top_n=10):
     """
     Lee las frecuencias de palabras del texto (incluidas las palabras vacías)
-    y genera un grafico de barras horizontales con las top_n
-    palabras mas frecuentes.
+    y genera un gráfico de barras horizontales con las top_n
+    palabras más frecuentes.
 
     Parametros:
         frecuencias (dict): diccionario con las palabras y sus frecuencias
         top_n (int): cantidad de palabras a graficar
 
     Retorna:
-        None (genera y guarda el grafico)
+        None (genera y guarda el gráfico)
     """
         
     top10 = sorted(frecuencias.items(), key=lambda x: x[1], reverse=True)[:top_n]
